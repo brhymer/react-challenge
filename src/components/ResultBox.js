@@ -31,11 +31,14 @@ class Resultbox extends Component {
         }
 
         return (
-            <div className="bg-grey border-2 h-0 transition-all overflow-hidden" id="result">
+            <div className="mb-40 bg-gray border-2 h-0 transition-all overflow-hidden" id="result">
                 <h2 className="text-xl font-bold">Results</h2>
+                <h2 className="my-4 text-xl underline" >By character:</h2>
+
                 {Array.from(inputMap.keys()).map(key => <p># of '{key}'s: {inputMap.get(key)}</p>)}
-                <h2 className="my-4 text-xl" >Top {size}:</h2>
+                <h2 className="my-4 text-xl underline" >Top {size}:</h2>
                 {topFiveArray.map(entry => <p>{entry}</p>)}
+                <p className="mb-6">  </p>
             </div>
         );
     }

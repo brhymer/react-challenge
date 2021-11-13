@@ -5,8 +5,8 @@ class TextInputBox extends Component {
     render(props) {
         return (
             
-            <div className="my-4">
-                <h2 className="text-3xl font-bold">Enter a string of text below</h2>
+            <div className="my-4 p-6">
+                <h2 className="py-6 text-3xl font-bold">Enter a string of text below</h2>
                 <div>
                     <textarea className="border-4 border-blue-400 rounded-md" id="input" cols="50"/>
                 </div>
