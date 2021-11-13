@@ -12,10 +12,7 @@ class TextInputBox extends Component {
                 </div>
                 <button 
                     className="bg-blue-700 text-white p-4 rounded-md"
-                    // onClick={()=>setInput({state: document.getElementById('input')?.value})}
-                    // onClick={()=>this.props.setInput.setState({state: document.getElementById('input').value})}
                     onClick={()=>this.setInput({input:document.getElementById('input').value})}
-                    // onClick={()=>console.log(this.props.setInput.setState)}
                 >
                     Try it out!
                 </button>
